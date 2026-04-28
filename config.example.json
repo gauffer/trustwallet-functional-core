@@ -1,0 +1,12 @@
+{
+  "config": {
+    "host": "0.0.0.0",
+    "port": 8000
+  },
+  "gates": [
+    {
+      "name": "ethereum",
+      "mnemonic": "override via WALLET_MNEMONIC_ETHEREUM env var"
+    }
+  ]
+}

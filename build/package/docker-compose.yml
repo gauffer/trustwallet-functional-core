@@ -1,0 +1,11 @@
+services:
+  wallet:
+    build:
+      context: ../..
+      dockerfile: build/package/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - WALLET_MNEMONIC_ETHEREUM=${WALLET_MNEMONIC_ETHEREUM:?Set WALLET_MNEMONIC_ETHEREUM in your shell env}
+    volumes:
+      - ../../config.json:/config.json:ro
